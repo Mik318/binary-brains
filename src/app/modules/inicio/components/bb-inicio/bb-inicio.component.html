@@ -1,0 +1,76 @@
+<div class="custom-cursor -z-10"></div>
+<div class="flex flex-col gap-16 overflow-y-hidden">
+  <div class="flex justify-center p-48 gap-4">
+    <div class="flex flex-col text-white w-[75%] gap-4">
+      <div class="text-2xl text-[#4CA4CA] pl-1">Hola, somos</div>
+      <span class="text-6xl text-[#4CA4CA] font-bold">Binary Brains</span>
+      <!--      <div class="text-4xl mb-8 text-[#B1D9EB]">"Club de desarrollo de software".-->
+      <!--      </div>-->
+      <div class="text-2xl text-[#B1D9EB] pl-1">Club de Desarrollo de Software en UPIICSA: Aprendiendo y creciendo
+        juntos en tecnología.
+      </div>
+      <div class="pl-1">
+        <!--        <button class="bg-[#4A9DC2] text-white font-bold pl-1.5 px-4 py-2 rounded w-1/4 hover:bg-[#3F8AAB]" (click)="registrar()">-->
+        <!--          Registrate-->
+        <!--        </button>-->
+        <button class="button" (click)="registrar()">
+          <p>Registrate</p>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-center">
+    <div class="flex items-center text-2xl font-bold w-[90%]">
+      <div class="w-[25%] text-right font-extralight mr-2"><span class="text-[#4EBAE0]">02-</span>Repositorios populares
+      </div>
+      <div class="flex-grow h-0.5 bg-white"></div>
+      <div class="w-5 h-5 transform rotate-45 bg-white"></div>
+    </div>
+  </div>
+
+  <div class="flex flex-row gap-4 justify-center">
+    <div *ngFor="let album of albums" class="max-w-sm rounded overflow-hidden shadow-lg
+    flex-shrink-0 card-hover cursor-pointer transition">
+      <img class="w-full opacity-90" src="{{album.image}}" alt="Sunset in the mountains">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2 text-[#4CA4CA]">{{album.title}}</div>
+        <p class="text-base text-[#B1D9EB]">
+          {{album.description}}
+        </p>
+      </div>
+      <div class="px-6 flex flex-wrap">
+        <ng-container *ngFor="let tecnologia of album.tecnologias">
+        <span class="inline-block chips rounded-full px-3 py-1 text-sm font-light text-white mr-2 mb-2">
+          <span class="text-[#4CA4CA]">{{tecnologia}}</span>
+        </span>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-center">
+    <div class="flex items-center text-2xl font-bold w-[90%]">
+      <div class="w-5 h-5 transform rotate-45 bg-white"></div>
+      <div class="flex-grow h-0.5 bg-white"></div>
+      <div class="w-[25%] text-right font-extralight mr-2"><span class="text-[#4EBAE0]">03-</span>Repositorios populares
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-center">
+    <div class="w-1/2 card-hover cursor-pointer">
+      <img class="w-full" src="assets/images/bb.webp" alt="Descripción de la imagen">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2 flex justify-between">
+          <span>Binary Talks</span>
+          <div class="flex flex-col">
+            <div>OCT</div>
+            <div>10</div>
+          </div>
+        </div>
+        <p class="text-gray-700 text-base">
+          Contenido de la tarjeta. Puedes agregar aquí información relevante.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+

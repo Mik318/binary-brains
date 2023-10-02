@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Carga la fuente personalizada JetBrains Mono */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('assets/fonts/JetBrainsMono-Light.woff2') format('woff2'),
+  url('assets/fonts/JetBrainsMono-Regular.woff2') format('woff2'),
+  url('assets/fonts/JetBrainsMono-Thin.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'JetBrains Mono', monospace; /* Usa la fuente personalizada como fuente principal */
+  /* Establece un gradiente radial que cubra toda la pantalla desde la parte inferior derecha */
+  //background:  radial-gradient(ellipse farthest-side at bottom right,  #3980B4 10%, #060513 105%);
+  background: #060513;
+  /* El origen del gradiente radial está en la esquina inferior derecha (bottom right) */
+  /* El primer color (#060513) se encuentra en el centro y el segundo color (#3980B4) se expande hacia afuera para cubrir toda la pantalla */
+
+  /* Añade estilos adicionales según sea necesario */
+  color: white;
+  /* Añade más estilos según tus necesidades */
+}
+
+
+
+
+
