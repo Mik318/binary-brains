@@ -38,4 +38,8 @@ export class BbInicioComponent implements OnInit {
   registrar() {
     window.open('https://forms.gle/h81o2CYZyEGUznY59');
   }
+
+  evento(){
+    window.open('https://lu.ma/BinaryTalks');
+  }
 }

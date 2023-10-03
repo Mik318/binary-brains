@@ -78,9 +78,21 @@
 
 
 .card-hover:hover {
-  background: rgba(129, 129, 129, 0.19);
+  background: rgba(129, 129, 129, 0.14);
 }
 
 .chips {
   background: rgba(53, 141, 179, 0.34);
+}
+
+.luma-border{
+  border: rgba(255, 255, 255, 0.16) solid 0.1px;
+}
+
+.lu-ma{
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.lu-ma-day{
+  background: rgba(255, 255, 255, 0.06);
 }
