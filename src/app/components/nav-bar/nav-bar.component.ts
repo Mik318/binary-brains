@@ -10,23 +10,29 @@ export class NavBarComponent {
   constructor(private el: ElementRef) {
   }
   scrollToInicio() {
-    const inicioElement = document.getElementById('inicio');
-    if (inicioElement) {
-      inicioElement.scrollIntoView({ behavior: 'smooth' });
+    const inicioElements = document.getElementsByClassName('inicio');
+
+    if (inicioElements.length > 0) {
+      const primerElementoInicio = inicioElements[0];
+      primerElementoInicio.scrollIntoView({ behavior: 'smooth' });
     }
   }
 
   scrollToEventos() {
-    const inicioElement = document.getElementById('eventos');
-    if (inicioElement) {
-      inicioElement.scrollIntoView({behavior: 'smooth'});
+    const inicioElements = document.getElementsByClassName('eventos');
+
+    if (inicioElements.length > 0) {
+      const primerElementoInicio = inicioElements[0];
+      primerElementoInicio.scrollIntoView({ behavior: 'smooth' });
     }
   }
 
   scrollToRepositorios() {
-    const inicioElement = document.getElementById('repositorios');
-    if (inicioElement) {
-      inicioElement.scrollIntoView({behavior: 'smooth'});
+    const inicioElements = document.getElementsByClassName('repositorios');
+
+    if (inicioElements.length > 0) {
+      const primerElementoInicio = inicioElements[0];
+      primerElementoInicio.scrollIntoView({ behavior: 'smooth' });
     }
   }
 }
