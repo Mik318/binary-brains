@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, ElementRef} from '@angular/core';
 
 @Component({
   selector: 'nav-bar',
@@ -7,4 +7,26 @@ import { Component } from '@angular/core';
 })
 export class NavBarComponent {
 
+  constructor(private el: ElementRef) {
+  }
+  scrollToInicio() {
+    const inicioElement = document.getElementById('inicio');
+    if (inicioElement) {
+      inicioElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  scrollToEventos() {
+    const inicioElement = document.getElementById('eventos');
+    if (inicioElement) {
+      inicioElement.scrollIntoView({behavior: 'smooth'});
+    }
+  }
+
+  scrollToRepositorios() {
+    const inicioElement = document.getElementById('repositorios');
+    if (inicioElement) {
+      inicioElement.scrollIntoView({behavior: 'smooth'});
+    }
+  }
 }
