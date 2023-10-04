@@ -1,6 +1,6 @@
 <div class="custom-cursor -z-10"></div>
 <div class="flex flex-col gap-16 overflow-y-hidden mb-4">
-  <div class="flex justify-center p-48 gap-4" id="inicio">
+  <div class="flex justify-center p-48 gap-4 inicio">
     <div class="flex flex-col text-white w-[75%] gap-4">
       <div class="text-2xl text-[#4CA4CA] pl-1">Hola, somos</div>
       <span class="text-6xl text-[#4CA4CA] font-bold">Binary Brains</span>
@@ -19,7 +19,7 @@
   <div class="flex justify-center">
     <div class="flex items-center text-2xl font-bold w-[90%]">
       <div class="w-[25%] text-right font-extralight mr-2">
-        <span class="text-[#4EBAE0]" id="eventos">02-</span>Eventos próximos
+        <span class="text-[#4EBAE0] eventos">02-</span>Eventos próximos
       </div>
       <div class="flex-grow h-0.5 bg-white"></div>
       <div class="w-5 h-5 transform rotate-45 bg-white"></div>
@@ -89,7 +89,7 @@
   </div>
   <!--  album de repositorios-->
 
-  <div class="flex flex-row gap-4 justify-center" id="repositorios">
+  <div class="flex flex-row gap-4 justify-center repositorios">
     <div *ngFor="let album of albums" class="max-w-sm rounded overflow-hidden shadow-lg
     flex-shrink-0 card-hover cursor-pointer transition" (click)="repositorio(album.link)">
       <img class="w-full opacity-90" src="{{album.image}}" alt="Sunset in the mountains">
